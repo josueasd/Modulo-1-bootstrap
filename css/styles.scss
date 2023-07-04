@@ -1,0 +1,69 @@
+//Variables
+$yellow:#f5e345;
+$green:#00ff7f;
+$red: #e02626;
+
+$celeste: #84CAFB;
+$alert:#B60F0F;
+
+@mixin margenes($top, $bottom){
+    margin-top: $top;
+    margin-bottom:$bottom;
+}
+
+.jumbotron{
+    color: $celeste;
+    @include margenes(45px, 15px);
+ 
+}
+footer{
+    padding: 10px 10px 0 10px;
+    @include margenes(50px, 0px);
+    color:$celeste;
+}
+
+.btn-reserva{
+    width: 100%;
+}
+
+.breadcrumb{
+    background-color:$celeste;
+ }
+
+.footer-address-icon {
+    padding-right: 5px;
+}
+
+.alert{
+    background-color:$alert;
+    color: white;
+}
+.close{
+    background-color:$alert;
+    color: white;
+    border: none;
+    height:20px;
+    width:40px;
+    position: absolute;
+    float: right !important;
+}
+.carousel-item{
+    height:400px;
+}
+
+.card-hotel {
+    flex: 1 150px;
+    @include margenes(10px, 10px);
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.spacer{ 
+    @include margenes(150px, 0px);
+    margin-left: 5px;
+}
+
+a{
+    color: white;
+}
+
+#contenido { width: 1024px; margin: 0 auto; }
